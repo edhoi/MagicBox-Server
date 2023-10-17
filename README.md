@@ -19,7 +19,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="img/icon.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">MagicBox</h3>
@@ -115,6 +115,7 @@ Proof of Concept starting using VM
     Researching potential CMS Admin options 
     1. [Payload CMS][Payload-URL]
     2. [Strapi CMS][Strapi-URL] (leader so far)
+    
     NextjS frontend app
 
 ### Installation
@@ -136,14 +137,24 @@ Proof of Concept starting using VM
    npm install
    ```
 4. Start CMS and Frontend Services 
+   
+   Start Strapi
    ``` sh
-   TBD
+   npm run develop
+   ``` 
+   admin url: https://localhost:1337/admin
+
+   Start Nextjs
+   ``` sh 
+   npm run dev
    ```
+   Frontend Address: https://localhost:3000
 5. Configure `Ubuntu Desktop`
     Startup Applications setting
    ```sh
    firefox -kiosk `URL TO FRONTEND`
    ```
+
 6. Restart vm/hardware to boot up to display site
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
