@@ -177,9 +177,9 @@ update message or url to be shown on display
 
   2. Setup Backend/Frontend to serve a CMS and Webpage to show content
      - [ ] Create Monolithic App
-      - Researching
-        1. [Payload CMS][Payload-URL]
-        2. [Strapi CMS][Strapi-URL] *
+       - Researching
+         1. [Payload CMS][Payload-URL]
+         2. [Strapi CMS][Strapi-URL] *
      - [ ] Create Display Page 
        - [ ] Should show local ip address and admin url(temp for dev)
        - [ ] Should show Content from CMS
