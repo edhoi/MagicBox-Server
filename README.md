@@ -176,60 +176,60 @@ update message or url to be shown on display
      - [x] Autostart into Browser (Default Firefox for now)
 
   2. Setup Backend/Frontend to serve a CMS and Webpage to show content
-    - [ ] Create Monolithic App
+     - [ ] Create Monolithic App
       - Researching
         1. [Payload CMS][Payload-URL]
         2. [Strapi CMS][Strapi-URL] *
-    - [ ] Create Display Page 
-      - [ ] Should show local ip address and admin url(temp for dev)
-      - [ ] Should show Content from CMS
-      - [ ] Seed Default Data
-    - [ ] Configure CMS and Impliment Content on Display Page
+     - [ ] Create Display Page 
+       - [ ] Should show local ip address and admin url(temp for dev)
+       - [ ] Should show Content from CMS
+       - [ ] Seed Default Data
+     - [ ] Configure CMS and Impliment Content on Display Page
       - [ ] Basic Message
       - [ ] Website URL 
-    - [ ] Error Handling 
-      - [ ] Empty CMS Message
-      - [ ] !200 http response
+     - [ ] Error Handling 
+       - [ ] Empty CMS Message
+       - [ ] !200 http response
 
 - [ ] Test POC On Actual Hardware
-    1. Hardware Check
-       - [ ] Ubuntu version check, last provided version was 20.04 MATE
-         - [ ] Can we upgrade from last provided image?
-       - [ ] Do we need lighter GUI?
-         - x11
-         - LightDM
-         - SLiM
-       - [ ] Do we need lighter Browser?
-         - Chromium
-         - SeaMonkey
-         - Viper
-         - Nyxt
-         - PURE CLI webclient `Lynx` - Redefines scope of Backend/Frontend work
-       - [ ] Create Startup script to trigger light GUI/browser
-       - [ ] Screen Alignment Adjustment and positioning
-         - TBD
-       - [ ] Handle Screensaver/lockout
-         - [ ] Do we need to handle burn in?
-    2. Secondary Feature Creation
-       - [ ] Website Url to Display
-         - [ ] Squish to Fit or Display (x,y) Position of Website
+  1. Hardware Check
+     - [ ] Ubuntu version check, last provided version was 20.04 MATE
+        - [ ] Can we upgrade from last provided image?
+     - [ ] Do we need lighter GUI?
+       - x11
+       - LightDM
+       - SLiM
+     - [ ] Do we need lighter Browser?
+       - Chromium
+       - SeaMonkey
+       - Viper
+       - Nyxt
+       - PURE CLI webclient `Lynx` - Redefines scope of Backend/Frontend work
+     - [ ] Create Startup script to trigger light GUI/browser
+     - [ ] Screen Alignment Adjustment and positioning
+       - TBD
+     - [ ] Handle Screensaver/lockout
+       - [ ] Do we need to handle burn in?
+  2. Secondary Feature Creation
+     - [ ] Website Url to Display
+       - [ ] Squish to Fit or Display (x,y) Position of Website
          - [ ] Refresh Intervial
-       - [ ] Message Display
-         - [ ] Wysiwyg Font and Size
+     - [ ] Message Display
+       - [ ] Wysiwyg Font and Size
          - [ ] Scroll on length Speed/Multi Line?
-       - [ ] Display Embeded Code
-         - [ ] Dropped in html/js to deploy to Display Page
-         - [ ] CMS Drop in templates? (ala squarespace style)
-       - [ ] Image upload gallery
-         - [ ] Single Image that cycles through gallery,
-           - [ ] Speed/interval
-         - [ ] Carousel of uploaded images squished to fit like thumbnail selection, endless loop
-           - [ ] Speed 
-       - [ ] Error Handling Customization
-         - [ ] System Error? (backend not available? Or should this be handled with status lights)
-         - [ ] Custom 4xx (Site issue dead/refuse)
-         - [ ] Custom 5xx (Network Error)
-  2. Security and Manipulation protection measures
+     - [ ] Display Embeded Code
+       - [ ] Dropped in html/js to deploy to Display Page
+       - [ ] CMS Drop in templates? (ala squarespace style)
+     - [ ] Image upload gallery
+       - [ ] Single Image that cycles through gallery,
+         - [ ] Speed/interval
+       - [ ] Carousel of uploaded images squished to fit like thumbnail selection, endless loop
+         - [ ] Speed 
+     - [ ] Error Handling Customization
+       - [ ] System Error? (backend not available? Or should this be handled with status lights)
+       - [ ] Custom 4xx (Site issue dead/refuse)
+       - [ ] Custom 5xx (Network Error)
+  3. Security and Manipulation protection measures
      - CMS User Auth? default user/pass for first startup
         - Update username/pass
      - DNS IP address or fixed ip address setup?
