@@ -112,11 +112,9 @@ Proof of Concept starting using VM
   Ubuntu Desktop
   Node JS and NPM
   * Monolith App
-    Researching potential CMS Admin options 
-    1. [Payload CMS][Payload-URL]
-    2. [Strapi CMS][Strapi-URL] (leader so far)
-    
-    NextjS frontend app
+  
+    * [Strapi][Strapi-URL] Backend and Admin
+    * [Next.js][Next-URL] Frontend
 
 ### Installation
 
@@ -152,7 +150,7 @@ Proof of Concept starting using VM
 5. Configure `Ubuntu Desktop`
     Startup Applications setting
    ```sh
-   firefox -kiosk `URL TO FRONTEND`
+   firefox -kiosk `https://localhost:3000`
    ```
 
 6. Restart vm/hardware to boot up to display site
@@ -188,11 +186,11 @@ update message or url to be shown on display
 
   2. Setup Backend/Frontend to serve a CMS and Webpage to show content
      - [ ] Create Monolithic App
-       - Researching
-         1. [Payload CMS][Payload-URL]
-         2. [Strapi CMS][Strapi-URL] *
+         1. [Strapi CMS][Strapi-URL] CMS
+         2. [Next JS][Next-URL] Frontend
      - [ ] Create Display Page 
-       - [ ] Should show local ip address and admin url(temp for dev)
+       - [ ] Should show local ip address and admin url(temp for dev localhost hard coded)
+            - [ ] get local hardware ip address to frontend?
        - [ ] Should show Content from CMS
        - [ ] Seed Default Data
      - [ ] Configure CMS and Impliment Content on Display Page
@@ -246,6 +244,7 @@ update message or url to be shown on display
      - DNS IP address or fixed ip address setup?
      - Update frontend/backend package option on admin page?
      - OS update? 
+     - 
 - [ ] I2C Status Strip
 
 <!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
