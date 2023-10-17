@@ -113,7 +113,7 @@ Proof of Concept starting using VM
   Node JS and NPM
   * Monolith App
   
-    * [Strapi][Strapi-URL] Backend and Admin
+    * TBD Backend and Admin
     * [Next.js][Next-URL] Frontend
 
 ### Installation
@@ -136,11 +136,11 @@ Proof of Concept starting using VM
    ```
 4. Start CMS and Frontend Services 
    
-   Start Strapi
+   Start TBD
    ``` sh
-   npm run develop
+  TBD
    ``` 
-   admin url: https://localhost:1337/admin
+   admin url: TBD
 
    Start Nextjs
    ``` sh 
@@ -185,12 +185,12 @@ update message or url to be shown on display
      - [x] Autostart into Browser (Default Firefox for now)
 
   2. Setup Backend/Frontend to serve a CMS and Webpage to show content
-     - [ ] Create Monolithic App
-         1. [Strapi CMS][Strapi-URL] CMS
+     - [x] Create Monolithic App
+         1. Research Database/headless cms
          2. [Next JS][Next-URL] Frontend
-     - [ ] Create Display Page 
-       - [ ] Should show local ip address and admin url(temp for dev localhost hard coded)
-            - [ ] get local hardware ip address to frontend?
+     - [x] Create Display Page 
+       - [x] Should show local ip address and admin url(temp for dev localhost hard coded)
+            - [x] get local hardware ip address to frontend?
        - [ ] Should show Content from CMS
        - [ ] Seed Default Data
      - [ ] Configure CMS and Impliment Content on Display Page
