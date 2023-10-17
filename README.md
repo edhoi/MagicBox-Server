@@ -171,9 +171,9 @@ update message or url to be shown on display
 
 - [ ] Proof Of Concept
   1. Setup VM OS and view a webpage
-    - [x] Setup Ubuntu Desktop
-    - [x] Autostart with out login
-    - [x] Autostart into Browser (Default Firefox for now)
+     - [x] Setup Ubuntu Desktop
+     - [x] Autostart with out login
+     - [x] Autostart into Browser (Default Firefox for now)
 
   2. Setup Backend/Frontend to serve a CMS and Webpage to show content
     - [ ] Create Monolithic App
