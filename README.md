@@ -186,12 +186,11 @@ update message or url to be shown on display
 
   2. Setup Backend/Frontend to serve a CMS and Webpage to show content
      - [x] Create Monolithic App
-         1. Research Database/headless cms
-         2. [Next JS][Next-URL] Frontend
+         1. reduce complexity for pseudo cms based off next.js
      - [x] Create Display Page 
        - [x] Should show local ip address and admin url(temp for dev localhost hard coded)
             - [x] get local hardware ip address to frontend?
-       - [ ] Should show Content from CMS
+       - [x] Should show Content from CMS
        - [ ] Seed Default Data
      - [ ] Configure CMS and Impliment Content on Display Page
       - [ ] Basic Message
