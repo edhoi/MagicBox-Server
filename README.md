@@ -87,7 +87,7 @@ Build a website monitoring shelf system using reclaimed hardware including Odroi
 * [![Ubuntu][Ubuntu.os]][Ubuntu.com]
 * [![Next][Next.js]][Next-url]
 * [![Nodejs][Node.js]][Nodejs-url]
-* [![Typescript]][Typescript-url]
+* [![Prisma]][Prisma-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +113,7 @@ Proof of Concept starting using VM
   Node JS and NPM
   * Monolith App
   
-    * TBD Backend and Admin
+    * [Prisma][Prisma-URL] database - made basic cms
     * [Next.js][Next-URL] Frontend
 
 ### Installation
@@ -136,9 +136,10 @@ Proof of Concept starting using VM
    ```
 4. Start CMS and Frontend Services 
    
-   Start TBD
+   Start Prisma & generate db
    ``` sh
-  TBD
+   npx prisma init
+   npx prisma generate
    ``` 
    admin url: TBD
 
@@ -191,14 +192,14 @@ update message or url to be shown on display
        - [x] Should show local ip address and admin url(temp for dev localhost hard coded)
             - [x] get local hardware ip address to frontend?
        - [x] Should show Content from CMS
-       - [ ] Seed Default Data
-     - [ ] Configure CMS and Impliment Content on Display Page
-      - [ ] Basic Message
-      - [ ] Website URL 
-     - [ ] Error Handling 
-       - [ ] Empty CMS Message
-       - [ ] !200 http response
-
+       - [x] Seed Default Data
+     - [X] Configure CMS and Impliment Content on Display Page
+      - [X] Basic Message
+      - [x] Website URL 
+     - [/] Error Handling 
+       - [x] Empty CMS Message (kinda jank still)
+       - [-] !200 http response 
+     - [ ] Rebuild webserver for clean dev process
 - [ ] Test POC On Actual Hardware
   1. Hardware Check
      - [ ] Ubuntu version check, last provided version was 20.04 MATE
@@ -218,6 +219,8 @@ update message or url to be shown on display
        - TBD
      - [ ] Handle Screensaver/lockout
        - [ ] Do we need to handle burn in?
+     - [ ] Handle updated content change, with viewer no interaction available besides power cycle reset(not ideal). Persistent reload would interupt main function of displaying message or webpage. 
+       - [ ] Ajax? Websocket command and control to trigger refresh on update or?  
   2. Secondary Feature Creation
      - [ ] Website Url to Display
        - [ ] Squish to Fit or Display (x,y) Position of Website
@@ -328,3 +331,5 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Strapi-url]: https://strapi.io/features
 [Typescript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
 [Typescript-url]: https://www.typescriptlang.org/
+[Prisma]: https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white
+[Prisma-URL]: https://www.prisma.io/
