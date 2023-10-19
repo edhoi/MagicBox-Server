@@ -219,8 +219,17 @@ update message or url to be shown on display
        - TBD
      - [ ] Handle Screensaver/lockout
        - [ ] Do we need to handle burn in?
-     - [ ] Handle updated content change, with viewer no interaction available besides power cycle reset(not ideal). Persistent reload would interupt main function of displaying message or webpage. 
-       - [ ] Ajax? Websocket command and control to trigger refresh on update or?
+     - [ ] Integrate websocket package to handle server/client ping
+     - [ ] Websocket trigger for client to reload
+        ```jsx
+        import { useRouter } from 'next/router';
+        
+        const router = useRouter();
+        const handleRefresh = () => {
+          router.reload();
+        };
+        ```
+        trigger handleRefresh on websocket signal
   2. Secondary Feature Creation
      - [ ] Website Url to Display
        - [ ] Squish to Fit or Display (x,y) Position of Website
