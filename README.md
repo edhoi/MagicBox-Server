@@ -220,7 +220,7 @@ update message or url to be shown on display
      - [ ] Handle Screensaver/lockout
        - [ ] Do we need to handle burn in?
      - [ ] Handle updated content change, with viewer no interaction available besides power cycle reset(not ideal). Persistent reload would interupt main function of displaying message or webpage. 
-       - [ ] Ajax? Websocket command and control to trigger refresh on update or?  
+       - [ ] Ajax? Websocket command and control to trigger refresh on update or?
   2. Secondary Feature Creation
      - [ ] Website Url to Display
        - [ ] Squish to Fit or Display (x,y) Position of Website
