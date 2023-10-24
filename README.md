@@ -136,9 +136,10 @@ Proof of Concept starting using VM
    ```
 4. Start CMS and Frontend Services 
    
+   Switch to server folder of repo
+
    Start Prisma & generate db
    ``` sh
-   npx prisma init
    npx prisma generate
    ``` 
    admin url: TBD
@@ -149,6 +150,19 @@ Proof of Concept starting using VM
    ```
    Frontend Address: https://localhost:3000
 5. Configure `Ubuntu Desktop`
+    CLI Setup CRON to start 
+    ```
+    crontab -e
+    ```
+    add line 
+    ```
+    @reboot %%path to gitrepo%% startup.sh
+    ```
+
+    Disable Screen Saver
+    ```
+    Settings > Power > Power Saving Options > Screen Blank > Never
+    ```
     Startup Applications setting
    ```sh
    firefox -kiosk `https://localhost:3000`
