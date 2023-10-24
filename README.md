@@ -134,39 +134,41 @@ Proof of Concept starting using VM
    ```sh
    npm install
    ```
-4. Start CMS and Frontend Services 
+4. Start CMS and Frontend Services for dev
    
-   Switch to server folder of repo
+   Switch to /server/ folder of repo
 
    Start Prisma & generate db
    ``` sh
    npx prisma generate
    ``` 
-   admin url: TBD
 
    Start Nextjs
    ``` sh 
    npm run dev
    ```
-   Frontend Address: https://localhost:3000
+   Frontend View Address: http://localhost:3000
+   Frontend Admin Address: http://localhost:3000/admin 
+
 5. Configure `Ubuntu Desktop`
+
     CLI Setup CRON to start 
     ```
     crontab -e
     ```
     add line 
     ```
-    @reboot %%path to gitrepo%% startup.sh
+    @reboot cd %%path to gitrepo%% && npm run dev
     ```
 
-    Disable Screen Saver
-    ```
-    Settings > Power > Power Saving Options > Screen Blank > Never
-    ```
+    Disable Screen Saver in gui
+    
+      * Settings > Power > Power Saving Options > Screen Blank > Never
+    
     Startup Applications setting
-   ```sh
-   firefox -kiosk `https://localhost:3000`
-   ```
+     ```sh
+     firefox -kiosk `http://localhost:3000`
+     ```
 
 6. Restart vm/hardware to boot up to display site
 
@@ -231,10 +233,10 @@ update message or url to be shown on display
      - [ ] Create Startup script to trigger light GUI/browser
      - [ ] Screen Alignment Adjustment and positioning
        - TBD
-     - [ ] Handle Screensaver/lockout
-       - [ ] Do we need to handle burn in?
+     - [x] Handle Screensaver/lockout
+     - [ ] Do we need to handle burn in?
      - [ ] Integrate websocket package to handle server/client ping
-     - [ ] Websocket trigger for client to reload
+     - [ ] Websocket trigger for client to reload (or do data mutation on websocket trigger)
         ```jsx
         import { useRouter } from 'next/router';
         
